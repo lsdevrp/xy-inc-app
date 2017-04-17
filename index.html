@@ -1,0 +1,72 @@
+<!doctype html>
+<html >
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/angular-material-data-table/dist/md-data-table.css" />
+        
+    <style type="text/css">
+        /**
+         * Hide when Angular is not yet loaded and initialized
+         */
+        
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+        
+   </head>
+
+<body ng-app="xy-inc-app" layout="row" ng-cloak >
+   
+    <div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
+
+        <md-toolbar layout="row" class="md-whiteframe-z1">
+            <div class="md-toolbar-tools">                
+
+                <h3><a ng-href="/product">xy-inc</a></h3>
+
+                <span flex> </span>
+               
+            </div>
+        </md-toolbar>
+
+        <md-content flex ui-view id="content">
+
+        </md-content>
+
+    </div>
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+    <script src="bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
+    <script src="bower_components/angular-locale-pt-br/angular-locale_pt-br.js"></script>
+    
+    <script src="app/app.js"></script>  
+    <script src="app/product/product.js"></script>
+    <script src="app/product/product.service.js"></script>
+    <script src="app/product/product.controller.js"></script>
+    <script src="app/product/dialogs/add.product.controller.js"></script>
+    <script src="app/product/dialogs/del.product.controller.js"></script>
+    <script src="app/product/dialogs/edit.product.controller.js"></script>
+      
+</body>
+
+</html>

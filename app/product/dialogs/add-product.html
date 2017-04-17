@@ -1,0 +1,42 @@
+
+<md-dialog add-item-dialog flex="60">
+  <md-dialog-content class="md-dialog-content">
+    
+    <h2 class="md-title">Adicionar Product</h2>
+      
+    <form name="item.form" ng-submit="ctrl.editItem()">
+      <div layout="row" class="input-row">
+        <md-input-container flex>
+          <label>Name</label>
+          <input name="name" id="txtName" ng-model="productTela.name" required>
+        </md-input-container>       
+      </div>
+      <div layout="row" class="input-row">
+        <md-input-container flex>
+          <label>Description</label>
+          <input name="description" ng-model="productTela.description" required>
+        </md-input-container>
+      </div>
+      <div layout="row" class="input-row">
+        <md-input-container flex>
+          <label>Price</label>
+          <input name="price" type="price" ng-model="productTela.price" ui-number-mask="2" required >
+        </md-input-container>
+      </div>
+      <div layout="row" class="input-row">
+        <md-input-container flex>
+          <label>Category</label>
+          <input name="category" ng-model="productTela.category" required>
+        </md-input-container>       
+      </div>  
+      
+    </form>
+    
+  </md-dialog-content>
+  
+  <div class="md-dialog-actions">
+    <md-button class="md-primary" ng-click="ctrl.addItem()" ng-disabled="item.form.$invalid">Confirmar</md-button>
+    <md-button class="md-primary" ng-click="ctrl.cancel()">Cancelar</md-button>
+  </div>
+  
+</md-dialog>
